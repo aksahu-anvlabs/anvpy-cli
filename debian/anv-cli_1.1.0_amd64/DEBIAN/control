@@ -1,0 +1,5 @@
+Package: anvpy-cli
+Version: 1.1.0
+Architecture: amd64
+Maintainer: Amar Sahu techanvpy@gmail.com
+Description: A CLI Tool for running and debugging AnvPy projects from Desktop.
