@@ -189,7 +189,12 @@ int main(int argc, char* argv[]){
     					source = "/opt/anv-cli/template/.manifest";
     					destination = args[2] + "/.manifest";
     					fs::copy_file(source, destination, fs::copy_options::overwrite_existing);
-						cout << "Project created successfully" << endl;
+    					if(args[3] == "Web"){
+    						source = "/opt/anv-cli/template/index.html";
+    					destination = args[2] + "/index.html";
+    					fs::copy_file(source, destination, fs::copy_options::overwrite_existing);
+    					}
+						cout << "Project created successfully in " << std::filesystem::current_path().string() + "/" + args[2] << "." << endl;
 					}
 				}
 				else{

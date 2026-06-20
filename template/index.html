@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sample GUI</title>
+</head>
+<body>
+	<br><br><br>
+	<input placeholder="Say something">
+	<button onclick="send_message_to_python()">Send</button>
+</body>
+<script>
+	function callPython(val, params){
+		try{	
+			Android.callPython(val, JSON.stringify(params));
+		}catch(e){
+			return false;
+		}
+		return true;
+	}
+	function send_message_to_python(){
+		let val = document.querySelector("input").value;
+		callPython("sayHello", [val]); // params: function_name, [*arguments]
+	}
+</script>
+</html>
