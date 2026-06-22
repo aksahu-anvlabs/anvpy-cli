@@ -3,7 +3,23 @@ anv-cli enables developers to run and debug AnvPy projects directly from their P
 
 ![anv-cli Screenshot](assets/screenshot.png)
 
-# About AnvPy
+# Usage
+Create a new project.
+project modes available are Console, Web, Kivy, Pygame.
+```bash
+anv create <name> <mode>
+```
+This will create a directory in your current path. Navigate inside the folder and run your project.
+```bash
+anv run
+```
+To check the logs for your project use logs command.
+```bash
+anv logs
+```
+
+
+## About AnvPy
 [AnvPy](https://play.google.com/store/apps/details?id=org.anvlabs.anvpy) is a Python-powered Android IDE designed for building applications, games, and other software directly on Android devices. It includes an integrated Python interpreter, code editor, debugger, and project management tools, allowing developers to write, run, test, and debug code within a native Android environment.
 
 AnvPy currently supports:
@@ -44,3 +60,4 @@ If AnvPy has helped you build applications, games, or learn programming, conside
 Every contribution, regardless of size, directly supports the continued growth of the AnvPy ecosystem.
 
 ❤️ Thank you for supporting independent software development.
+
